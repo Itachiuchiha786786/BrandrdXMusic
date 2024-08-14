@@ -8,25 +8,25 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "24658337"))
+API_HASH = getenv("API_HASH", "bf99242dbb7f3501f28d39f0a0383cbf")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "6730565890:AAGGRJxb-B4OSGDxeV_EvyRFSMJ9Kr5hJIQ")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Itachi:Itachi@itachi.rcfnknv.mongodb.net/?retryWrites=true&w=majority")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "anniemusic")
 PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 900))
 
 # Chat id of a group for logging bot's activities
 LOGGER_ID = int(getenv("LOGGER_ID", None))
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002198719573"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1002104939708"))
 
 # Get this value from @BRANDRD_ROBOT on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID"))
+OWNER_ID = int(getenv("6402009857"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -43,8 +43,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/BRANDRD_BOT")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/BRANDED_WORLD")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/dynamic_gang")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/dynamic_gang")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -74,7 +74,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @BRANDEDSTRINGSESSION_BOT on Telegram
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQGrwlgAnr3ctLyzcle8VyJTggY1_gCyrg8nDdqQ0JPUNvAIrZ1wCoQ-eK2vYxjoeGBJcxQxRpm5w5LpTu8rTWn5jLsOL1SPdB_bVRS4Im9CaVuHnG1rN472FLYWwFjmDV5TEopUbWy4B_iJFfEwYMlPl5lkat7EwTt2uKmEeXeLVX_mHOu9XXArhRuEsVXZZJV9tD1Ymt2pV4bKHIFm6fFfJU4nKoJnuV-DsP1lnqy8JHOVDg8LGDy31s-ctbq57frO1KD3l6ZVKLbuDA1wALCxyPLm7WDwqQz9ZGATuxuMRl2pgMsr1znhv4DRQoN8LIxA00srIuFNqNj-CP9wRULfF5L83gAAAAF4-oylAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
